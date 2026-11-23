@@ -35,7 +35,7 @@
       color: var(--fg);
       line-height: 1.65;
     }
-    header, main, footer {
+    header, main {
       width: min(100% - 2rem, var(--max));
       margin-inline: auto;
     }
@@ -87,15 +87,6 @@
       font-size: 0.92em;
       word-break: break-word;
     }
-    .toc a { text-decoration: none; }
-    .toc a:hover { text-decoration: underline; }
-    footer {
-      padding: 0 0 2.75rem;
-      color: var(--muted);
-      font-size: 0.9rem;
-      border-top: 1px solid var(--line);
-      padding-top: 1.25rem;
-    }
   </style>
 </head>
 <body>
@@ -122,7 +113,7 @@
     </section>
     <section>
       <h2>Online weather and location</h2>
-      <p>The Weather widget asks you to enable online weather before it requests location or contacts weather services. It can use Android's last known location when permission is granted and may read weather data from a system weather provider. If a device location is unavailable or you decline the Android location permission, GeoJS can estimate your area from your public IP address.</p>
+      <p>The Weather widget asks you to enable online weather before it requests location or contacts weather services. It can use Android's last known location when permission is granted and may read weather data from a system weather provider. If a device location is unavailable or you decline the Android location permission, GeoJS can estimate your area from your public IP address. Earlier builds can request location and start weather lookups when the widget appears. In those builds, turn off the widget to stop lookups.</p>
       <ul>
         <li><strong>Open-Meteo</strong> receives latitude and longitude for weather forecasts, UV and air quality.</li>
         <li><strong>GeoJS</strong> receives your IP address when the app needs to estimate your area.</li>
