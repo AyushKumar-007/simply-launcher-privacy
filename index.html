@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Privacy Policy for Simply Launcher, a distraction-free Android home screen." />
+  <title>Privacy Policy — Simply Launcher</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #0a0a0a;
+      --fg: #f2f2f2;
+      --muted: #a8a8a8;
+      --line: #2a2a2a;
+      --card: #141414;
+      --accent: #ffffff;
+      --max: 46rem;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f7f7f5;
+        --fg: #121212;
+        --muted: #5c5c5c;
+        --line: #e4e4e0;
+        --card: #ffffff;
+        --accent: #111111;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.65;
+    }
+    header, main, footer {
+      width: min(100% - 2rem, var(--max));
+      margin-inline: auto;
+    }
+    header {
+      padding: 2.5rem 0 1.25rem;
+      border-bottom: 1px solid var(--line);
+    }
+    .eyebrow {
+      color: var(--muted);
+      font-size: 0.85rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin: 0 0 0.75rem;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(1.75rem, 4vw, 2.35rem);
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      font-weight: 650;
+    }
+    .meta {
+      margin: 0.85rem 0 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    main { padding: 1.5rem 0 3.5rem; }
+    section {
+      margin: 0 0 1.75rem;
+      padding: 1.15rem 1.15rem 1.2rem;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+    }
+    h2 {
+      margin: 0 0 0.65rem;
+      font-size: 1.12rem;
+      letter-spacing: -0.01em;
+    }
+    p, li { color: var(--muted); }
+    p { margin: 0 0 0.85rem; }
+    p:last-child, ul:last-child { margin-bottom: 0; }
+    ul { margin: 0.35rem 0 0.85rem; padding-left: 1.2rem; }
+    li { margin: 0.35rem 0; }
+    strong { color: var(--fg); font-weight: 600; }
+    a { color: var(--accent); }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.92em;
+      word-break: break-word;
+    }
+    .toc a { text-decoration: none; }
+    .toc a:hover { text-decoration: underline; }
+    footer {
+      padding: 0 0 2.75rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+      border-top: 1px solid var(--line);
+      padding-top: 1.25rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <p class="eyebrow">Simply Launcher</p>
+    <h1>Privacy Policy</h1>
+    <p class="meta">
+      Effective / last updated: November 24, 2026<br />
+      Android package: <code>com.simplylauncher.app</code><br />
+      Contact: <a href="mailto:support@simplylauncher.app">support@simplylauncher.app</a>
+    </p>
+  </header>
+
+  <main>
+    <section class="toc" id="summary">
+      <h2>1. Summary</h2>
+      <p>
+        <strong>Simply Launcher</strong> is a distraction-free Android home screen
+        and optional digital-wellbeing toolkit. Most information stays on your
+        device. The app does <strong>not</strong> create a Simply Launcher cloud
+        account, does <strong>not</strong> include advertising SDKs, and does
+        <strong>not</strong> include analytics SDKs in the current build.
+      </p>
+      <p>
+        Some features process sensitive device data <em>on device</em>
+        (installed apps, usage stats, notifications, accessibility window titles)
+        or send limited network requests for weather. Those features are optional
+        or inherent to launcher functionality and are described below.
+      </p>
+      <p>
+        Viewing this Privacy Policy is informational. Continuing past onboarding
+        is <strong>not</strong> treated as consent to optional sensitive data
+        access. Runtime permissions and system toggles are requested when you
+        enable the related feature.
+      </p>
+    </section>
+
+    <section id="who">
+      <h2>2. Who we are</h2>
+      <p>
+        This policy applies to the Simply Launcher Android application published
+        under package name <code>com.simplylauncher.app</code>.
+      </p>
+      <p>
+        Privacy questions or deletion requests:
+        <a href="mailto:support@simplylauncher.app">support@simplylauncher.app</a>.
+      </p>
+    </section>
+
+    <section id="collect">
+      <h2>3. Information the app accesses or processes</h2>
+
+      <h2 style="font-size:1rem;margin-top:0.4rem;">3.1 On-device preferences (local storage)</h2>
+      <p>
+        Using Android Jetpack DataStore / local preferences, the app stores
+        settings you configure, for example:
+      </p>
+      <ul>
+        <li>Favorites, folders, renamed labels, hidden apps, recently used apps</li>
+        <li>Theme, font, widget, and gesture preferences</li>
+        <li>Focus / blocking schedules and related task metadata</li>
+        <li>Notification filter rules and wellbeing feature toggles</li>
+        <li>Onboarding completion state</li>
+      </ul>
+      <p>
+        This data remains on your device. The current build does not sync it to
+        Simply Launcher servers.
+      </p>
+
+      <h2 style="font-size:1rem;">3.2 Installed / launchable apps</h2>
+      <p>
+        As a home-screen launcher, the app reads launchable activities through
+        Android <strong>LauncherApps</strong> (and related package queries) so you
+        can browse and open apps, including work-profile apps when available.
+        App inventory is processed on device to power the home screen and drawer
+        and is not uploaded to Simply Launcher servers.
+      </p>
+
+      <h2 style="font-size:1rem;">3.3 Location and weather (optional)</h2>
+      <p>
+        If the weather widget is enabled, the app may:
+      </p>
+      <ul>
+        <li>Request approximate or precise location permission, and/or</li>
+        <li>Use network-based locality (for example GeoJS IP locality) as a fallback</li>
+        <li>Send latitude/longitude (or equivalent locality) to weather providers to fetch conditions</li>
+      </ul>
+      <p>
+        Network weather sources used by the app include:
+      </p>
+      <ul>
+        <li><strong>Open-Meteo</strong> forecast API (<code>api.open-meteo.com</code>)</li>
+        <li><strong>Open-Meteo</strong> air-quality API (<code>air-quality-api.open-meteo.com</code>)</li>
+        <li><strong>GeoJS</strong> IP geo lookup (<code>get.geojs.io</code>) as a locality fallback</li>
+        <li><strong>OpenStreetMap Nominatim</strong> reverse geocoding (<code>nominatim.openstreetmap.org</code>) to resolve a city name</li>
+      </ul>
+      <p>
+        The app may also read weather-related values exposed by OEM/system weather
+        ContentProviders when present. Location is used to fulfill weather/locality
+        display and is not sold by Simply Launcher.
+      </p>
+
+      <h2 style="font-size:1rem;">3.4 Usage access (optional)</h2>
+      <p>
+        If you enable features such as app blocking or in-app time reminders, Android
+        Usage Access may be required so the app can detect foreground apps and
+        enforce limits. Usage information is processed on device for that feature.
+      </p>
+
+      <h2 style="font-size:1rem;">3.5 Display over other apps (optional)</h2>
+      <p>
+        Overlay permission may be requested for time reminders, mindful launch delay,
+        blocking overlays, or Focus task countdown. Overlay content is generated
+        locally and is not uploaded to Simply Launcher servers.
+      </p>
+
+      <h2 style="font-size:1rem;">3.6 Notification access (optional)</h2>
+      <p>
+        If you enable Notification Filter, a Notification Listener Service may read
+        notifications to apply your filter rules. Notification content is processed
+        on device for filtering and is not uploaded to Simply Launcher servers.
+      </p>
+
+      <h2 style="font-size:1rem;">3.7 Accessibility (optional)</h2>
+      <p>
+        Accessibility may be requested for double-tap to lock and optional short-video
+        exit helpers. The service may inspect window titles for short-video detection.
+        Window titles are not stored as a history by Simply Launcher.
+      </p>
+
+      <h2 style="font-size:1rem;">3.8 Alarms and notifications (optional / Focus)</h2>
+      <p>
+        Focus / today’s task reminders may schedule exact alarms (user-granted where
+        required) and post notifications. Alarm metadata stays on device (and may
+        interact with the system Clock app / companion Dayline Planner when installed).
+      </p>
+
+      <h2 style="font-size:1rem;">3.9 Dayline Planner integration (optional)</h2>
+      <p>
+        If the companion Dayline Planner app is installed, Simply Launcher may exchange
+        schedule/task information with it via declared ContentProvider / broadcast
+        integrations so Focus tasks stay in sync. This stays between apps on your device.
+      </p>
+    </section>
+
+    <section id="use">
+      <h2>4. How information is used</h2>
+      <ul>
+        <li>Provide launcher home/drawer functionality</li>
+        <li>Remember your preferences and organization</li>
+        <li>Power optional wellbeing features you enable</li>
+        <li>Show weather/locality on the home widget when enabled</li>
+        <li>Respond to support requests you email us</li>
+      </ul>
+      <p>We do not sell personal information and do not use advertising SDKs in this app.</p>
+    </section>
+
+    <section id="share">
+      <h2>5. Sharing</h2>
+      <p>
+        Simply Launcher does not operate a backend that receives your preferences or
+        app inventory. Limited data may be transmitted to third-party <strong>service
+        providers</strong> solely to return weather/locality results (Open-Meteo, GeoJS,
+        Nominatim) when those features run. Those providers process requests under
+        their own terms/policies.
+      </p>
+      <p>
+        We may disclose information if required by law or to protect rights and safety,
+        to the limited extent we hold it (for example, email correspondence you send us).
+      </p>
+    </section>
+
+    <section id="sdks">
+      <h2>6. SDKs and libraries</h2>
+      <p>
+        The current release uses standard AndroidX / Jetpack libraries (Compose,
+        Navigation, Lifecycle, DataStore, etc.). It does <strong>not</strong> include
+        Firebase Analytics, Google Mobile Ads, Facebook SDK, or similar advertising /
+        analytics SDKs.
+      </p>
+    </section>
+
+    <section id="security">
+      <h2>7. Security</h2>
+      <p>
+        Local preferences are stored in the app’s private storage. Weather network
+        requests use HTTPS. No method of transmission or storage is 100% secure; please
+        keep your device locked and updated.
+      </p>
+    </section>
+
+    <section id="retention">
+      <h2>8. Retention and deletion</h2>
+      <p>
+        On-device data is retained until you change it, clear app storage, or uninstall
+        Simply Launcher. Clearing storage / uninstalling deletes local preferences.
+      </p>
+      <p>
+        Emails you send to support may be retained as needed to respond and for
+        ordinary business records. To request deletion of support correspondence,
+        email <a href="mailto:support@simplylauncher.app">support@simplylauncher.app</a>.
+      </p>
+    </section>
+
+    <section id="rights">
+      <h2>9. Your choices and rights</h2>
+      <ul>
+        <li>Disable weather / revoke location permission in system settings</li>
+        <li>Disable wellbeing features and revoke Usage Access, Overlay, Notification access, or Accessibility</li>
+        <li>Clear app storage or uninstall to remove local data</li>
+        <li>Contact us for privacy questions or requests where applicable law provides additional rights</li>
+      </ul>
+      <p>
+        Depending on where you live (for example GDPR/UK GDPR or certain U.S. state laws),
+        you may have rights to access, correct, delete, or restrict certain processing of
+        personal data. Because most processing is local to your device, the most effective
+        deletion method is clearing app data or uninstalling. Contact us and we will help
+        where we can.
+      </p>
+    </section>
+
+    <section id="children">
+      <h2>10. Children</h2>
+      <p>
+        Simply Launcher is not directed to children under 13 (or the equivalent minimum
+        age in your jurisdiction), and we do not knowingly collect personal information
+        from children.
+      </p>
+    </section>
+
+    <section id="changes">
+      <h2>11. Changes to this policy</h2>
+      <p>
+        We may update this Privacy Policy as the app or legal requirements change.
+        The “last updated” date at the top will change when we do. Material changes may
+        also be noted in an app update or store listing.
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>12. Contact</h2>
+      <p>
+        Simply Launcher privacy contact:<br />
+        <a href="mailto:support@simplylauncher.app">support@simplylauncher.app</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Simply Launcher. This page is the publicly hosted Privacy Policy for
+    <code>com.simplylauncher.app</code>.
+  </footer>
+</body>
+</html>
